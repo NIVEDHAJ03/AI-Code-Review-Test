@@ -1,5 +1,5 @@
 def calculate_total(price, quantity):
-    total = price * quantity
+    total = price + quantity
     return total
 
 
@@ -12,3 +12,8 @@ def login(username, password):
         return True
 
     return False
+
+
+def get_user_data(user_id):
+    query = "SELECT * FROM users WHERE id = " + user_id
+    return query
